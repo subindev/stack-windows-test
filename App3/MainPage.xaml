@@ -1,0 +1,80 @@
+﻿<Page
+    x:Class="App3.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls">
+
+    <ScrollViewer HorizontalScrollMode="Enabled"  HorizontalScrollBarVisibility="Visible">
+        <StackPanel Orientation="Horizontal" >
+            <Grid Margin="10" Background="LightBlue" Width="800">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox PlaceholderText="Enter URL here." Text="http://google.com" VerticalContentAlignment="Center" x:Name="urlBox"/>
+                    <Button Content="GO"  Grid.Column="1" Padding="10" Click="Button_Click"/>
+                </Grid>
+                <controls:WebView2  x:Name="webview" Grid.Row="1"/>
+            </Grid>
+
+            <Grid Margin="10" Background="LightBlue" Width="800">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox PlaceholderText="Enter URL here." Text="http://google.com" VerticalContentAlignment="Center" x:Name="urlBox1"/>
+                    <Button Content="GO"  Grid.Column="1" Padding="10" Click="Button1_Click"/>
+                </Grid>
+                <controls:WebView2  x:Name="webview1" Grid.Row="1"/>
+            </Grid>
+
+            <Grid Margin="10" Background="LightBlue" Width="800">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox PlaceholderText="Enter URL here." Text="http://google.com" VerticalContentAlignment="Center" x:Name="urlBox2"/>
+                    <Button Content="GO"  Grid.Column="1" Padding="10" Click="Button2_Click"/>
+                </Grid>
+                <controls:WebView2  x:Name="webview2" Grid.Row="1"/>
+            </Grid>
+
+            <Grid Margin="10" Background="LightBlue" Width="800">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox PlaceholderText="Enter URL here." Text="http://google.com" VerticalContentAlignment="Center" x:Name="urlBox3"/>
+                    <Button Content="GO"  Grid.Column="1"  Padding="10" Click="Button3_Click"/>
+                </Grid>
+                <controls:WebView2  x:Name="webview3" Grid.Row="1"/>
+            </Grid>
+
+        </StackPanel>
+    </ScrollViewer>
+</Page>
